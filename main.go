@@ -17,6 +17,8 @@ func main() {
 	types.CreateArray()
 
 	functions.CallMultipleReturns()
+	functions.CallVariadic()
+	functions.CallPointerValue()
 
 	router := gin.Default()
 	router.GET("/locations/init", pkg.InitLocations)
